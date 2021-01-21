@@ -2,7 +2,7 @@ name: Trips CICD
 
 env:
   registry: docker.pkg.github.com
-  repository: hattan/openhack-devops-team-gh/api-trips
+  repository: devopsohdrjan21/apis/trips
   docker_path: apis/trips
   staging_url: https://openhackxv61mxh2trips-staging.azurewebsites.net/
   prod_url: https://openhackxv61mxh2trips.azurewebsites.net/
