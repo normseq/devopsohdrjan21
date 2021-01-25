@@ -16,8 +16,8 @@ namespace poi
         {
 
             return;
-            BuildWebHost(args).Run();
-            //CreateHostBuilder(args).Build().Run();
+            //BuildWebHost(args).Run();
+            CreateHostBuilder(args).Build().Run();
 
         }
       
