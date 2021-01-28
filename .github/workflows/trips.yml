@@ -2,7 +2,7 @@ name: Trips CICD
 
 env:
   registry: docker.pkg.github.com
-  repository: hattan/openhack-devops-team-gh/api-trips
+  repository: devopsohdrjan21/apis/trips
   docker_path: apis/trips
   staging_url: https://openhackxv61mxh2trips-staging.azurewebsites.net/
   prod_url: https://openhackxv61mxh2trips.azurewebsites.net/
@@ -10,6 +10,7 @@ env:
   webapp_name: openhackxv61mxh2trips
   build_name: Trips
   webv_path: apis/trips/webvalidate
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
 on:
   push:
@@ -42,7 +43,9 @@ jobs:
       run: go get
 
     - name: Run Unit Tests
-      run: go test ./tests
+      run: go test ./tripsgo
+      # run: go test ./tests
+        
 
     - uses: actions/github-script@0.9.0
       if: failure()
