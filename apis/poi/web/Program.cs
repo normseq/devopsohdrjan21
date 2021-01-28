@@ -11,16 +11,16 @@ namespace poi
     [ExcludeFromCodeCoverage]
     public class Program
     {
-        // public static void Main(string[] args) => CreateHostBuilder(args).Build().Run();
-        public static void Main(string[] args)
+        public static void Main(string[] args) => CreateHostBuilder(args).Build().Run();
+        /*public static void Main(string[] args)
         {
 
-            return;
+            //return;
             //BuildWebHost(args).Run();
-            CreateHostBuilder(args).Build().Run();
+            //CreateHostBuilder(args).Build().Run();
 
         }
-      
+      */
         public static IHostBuilder CreateHostBuilder(string[] args)
         {
             //used to read env variables for host/port
