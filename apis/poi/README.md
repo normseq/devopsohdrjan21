@@ -1,7 +1,5 @@
-Update 1 to branch
-Update 2 to branch
-Update 3 to branch
-Update 4 to branch
+Updated poi in dryrun1 branch 
+
 # POI Service
 
 ## Overview
